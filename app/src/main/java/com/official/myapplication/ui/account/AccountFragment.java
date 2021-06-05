@@ -12,6 +12,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.official.myapplication.MainActivity;
+import com.official.myapplication.R;
 import com.official.myapplication.databinding.FragmentAccountBinding;
 
 public class AccountFragment extends Fragment {
@@ -19,19 +22,26 @@ public class AccountFragment extends Fragment {
     private AccountViewModel accountViewModel;
     private FragmentAccountBinding binding;
 
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
+//        View view =
+//        FloatingActionButton fab = (FloatingActionButton) View.findViewById(R.id.fab);
+//        fab.hide();
+
+
         accountViewModel =
                 new ViewModelProvider(this).get(AccountViewModel.class);
 
         binding = FragmentAccountBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
+
         accountViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+
             }
         });
         return root;
@@ -42,4 +52,6 @@ public class AccountFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+
 }

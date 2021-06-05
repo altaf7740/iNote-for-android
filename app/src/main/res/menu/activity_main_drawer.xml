@@ -5,18 +5,18 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_dashboard"
             android:icon="@drawable/dashboard"
             android:title="Dashboard" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_account"
             android:icon="@drawable/account"
             android:title="Account" />
     </group>
     <group android:checkableBehavior="single"
         android:id="@+id/aboutus">
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_aboutus"
             android:icon="@drawable/aboutus"
             android:title="About us" />
     </group>

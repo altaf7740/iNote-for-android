@@ -16,4 +16,6 @@ public class AccountViewModel extends ViewModel {
     public LiveData<String> getText() {
         return mText;
     }
+
+
 }
