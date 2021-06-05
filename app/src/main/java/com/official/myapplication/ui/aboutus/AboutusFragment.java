@@ -1,4 +1,4 @@
-package com.official.myapplication.ui.slideshow;
+package com.official.myapplication.ui.aboutus;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,24 +12,23 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.official.myapplication.R;
-import com.official.myapplication.databinding.FragmentSlideshowBinding;
+import com.official.myapplication.databinding.FragmentAboutusBinding;
 
-public class SlideshowFragment extends Fragment {
+public class AboutusFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
-    private FragmentSlideshowBinding binding;
+    private AboutusViewModel aboutusViewModel;
+    private FragmentAboutusBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        aboutusViewModel =
+                new ViewModelProvider(this).get(AboutusViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentAboutusBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        aboutusViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
