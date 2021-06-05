@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class SignupActivity extends AppCompatActivity {
 
     @Override
@@ -23,6 +25,7 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(SignupActivity.this, "account activation link sent on your mail", Toast.LENGTH_SHORT).show();
+
                 startActivity(loginActivity);
                 finish();
             }

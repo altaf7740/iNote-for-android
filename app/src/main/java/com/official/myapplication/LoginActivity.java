@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override
@@ -41,8 +43,11 @@ public class LoginActivity extends AppCompatActivity {
         forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(LoginActivity.this, "password reset link sent on your mail ...", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(LoginActivity.this, "password reset link sent on your mail ...", Toast.LENGTH_SHORT).show();
+                Snackbar.make(v, "account activation link sent on your mail", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
+
         });
     }
 }
