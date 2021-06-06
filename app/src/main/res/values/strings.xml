@@ -13,5 +13,14 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="about_us">
+        Hello. I’m Mohammad Altaf Hussain. It’s a pleasure to meet you.
+        \n\nFor the last few years, I’ve been developing apps, api and providing security solution, serving hundreds of clients in diverse industries.  I’ve helped numerous businesses boost their sales through the successful execution of their marketing plans.
+        \n\nMany of my clients have been with me for years, coming back over and over for assistance with their copywriting projects as their business grows. Among the projects I’ve done are websites, landing pages, brochures, sales letters, data sheets, ads, blogs and video scripts.
+        \n\nFor the past 2 years, I’ve especially focused on providing digital marketing services as a website copywriter and search engine optimization (SEO) expert. If you found me via a Google search, then you know I must be doing something right. I rank at the top for my main keywords and don’t spend a cent on Google ads. What I’ve done for myself, I can do for you — help your website rise on the search engines and, most importantly, convert visitors into customers.
+        \n\nWorking on your behalf, I’ll learn about your business, your markets, your customers, your prospects and your competition (keeping all proprietary information confidential, of course). Then I’ll apply that knowledge to write crisp copy that meets your objectives.
+
+
+    </string>
 
 </resources>
