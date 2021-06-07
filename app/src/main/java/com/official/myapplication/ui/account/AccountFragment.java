@@ -74,6 +74,8 @@ public class AccountFragment extends Fragment {
                         .show();
                             }
         });
+
+
         return root;
     }
 

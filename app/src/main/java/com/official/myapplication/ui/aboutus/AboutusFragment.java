@@ -36,6 +36,7 @@ public class AboutusFragment extends Fragment {
 
             }
         });
+
         return root;
     }
 

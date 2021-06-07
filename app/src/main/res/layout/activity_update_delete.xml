@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateDeleteActivity">
+
+
+
+
+<!--    -->
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/accent"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/goudy_bookletter_1911"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="-15dp"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Notedown Your Password"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="148dp"
+            android:layout_marginEnd="24dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/websiteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/background_edittext"
+                    android:drawableLeft="@drawable/earth"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#3F3F3F"
+                    android:ems="10"
+                    android:hint="Website"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textSize="24sp" />
+
+
+                <EditText
+                    android:id="@+id/usernameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/background_edittext"
+                    android:drawableLeft="@drawable/user2"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textSize="24sp" />
+
+
+
+                <EditText
+                    android:id="@+id/passwordTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/background_edittext"
+                    android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#3F3F3F"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="12dp"
+                    android:textSize="24sp" />
+
+
+                <Button
+                    android:id="@+id/updateCredentialBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="#388E3C"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="14dp"
+                    android:text="Update"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/deleteCredentialBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:backgroundTint="#C62828"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="14dp"
+                    android:text="Delete"
+                    android:textSize="22sp" />
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+<!--    -->
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

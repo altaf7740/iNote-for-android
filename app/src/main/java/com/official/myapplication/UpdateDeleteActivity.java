@@ -4,15 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AddCredentialActivity extends AppCompatActivity {
+import static com.official.myapplication.R.layout.*;
+
+public class UpdateDeleteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_credential);
-        getSupportActionBar().setTitle("Add new credential");
+        setContentView(activity_update_delete);
+        getSupportActionBar().setTitle("Edit credential");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 
     @Override
