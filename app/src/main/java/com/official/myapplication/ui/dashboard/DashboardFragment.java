@@ -2,6 +2,7 @@ package com.official.myapplication.ui.dashboard;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -17,6 +18,8 @@ import com.official.myapplication.Adapters.CredentialAdapter;
 import com.official.myapplication.Models.CredentialModel;
 import com.official.myapplication.R;
 import com.official.myapplication.databinding.FragmentDashboardBinding;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
@@ -58,6 +61,7 @@ public class DashboardFragment extends Fragment {
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         credentials.setLayoutManager(linearLayoutManager);
+
 
         return root;
     }

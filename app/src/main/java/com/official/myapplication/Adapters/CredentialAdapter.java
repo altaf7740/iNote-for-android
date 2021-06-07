@@ -1,6 +1,7 @@
 package com.official.myapplication.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,8 +13,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.snackbar.Snackbar;
+import com.official.myapplication.MainActivity;
 import com.official.myapplication.Models.CredentialModel;
 import com.official.myapplication.R;
+import com.official.myapplication.UpdateDeleteActivity;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -50,6 +53,17 @@ public class CredentialAdapter extends  RecyclerView.Adapter<CredentialAdapter.v
                         .setAction("Action", null).setDuration(500).show();
             }
         });
+
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Intent intent = new Intent(context, UpdateDeleteActivity.class);
+                context.startActivity(intent);
+                return false;
+
+            }
+        });
+
 
     }
 
